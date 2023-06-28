@@ -1,0 +1,77 @@
+name.addAll(["nour","osama"]);
+name.add("hello");
+name.insert(2, "element");
+name.insertAll(2,["nour","osama"]);
+name.replaceRange(2,5, ["samer"]);
+List name =["ali","amer","degold","osama","soso","ahmed","wolrd"];
+// // print(name.length is List) ;
+
+Map myMap ={"name":"ali","age":"33"};
+
+Set myset ={"name","age","name"};
+
+Map myMap ={"name":"ali","age":"33"};
+
+Set myset ={"name","age","amer","soso","nour","ali","osama"};
+// myset.addAll({"nour","ali","osama"});
+// myset.remove("nour");
+myset.removeAll({1,3,"nour"});
+
+Set name = {};
+
+  Map myMap = {"name": "ali", "age": "33","age":"33" ,"address": 34343, "gender": "male"};
+
+  myMap.forEach((key, value) {
+    
+     name.add(value);
+    
+    
+    });
+    print(name.toList());
+
+import 'dart:math' as math;
+
+import 'second.dart';
+
+void main() {
+  
+  math.sqrt(44);
+  
+}
+
+String name = "degold";
+ name.runes.forEach((element) {print(element);});
+
+   myMax(List<int> arr){
+
+  int max = arr[0];
+  for(int i =0 ; i < arr.length ; i ++)
+  if(arr[i] > max)
+  max = arr[i];
+
+  return max;
+
+
+  List name = ["amer ", "osama","degold"];
+  Map myMap = name.asMap();
+  print(myMap);
+
+
+//=============================
+  List name = ["amer ", "osama","degold"];
+ name.shuffle();
+}
+
+//=============================
+  List name = ["amer ", "osama","degold",4,5,3,88,9];
+var num = name.whereType<int>();
+print(num);
+
+//4, 5, 3, 88, 9)
+
+//=============================
+  List name = ["amer","degold","nour","osama"];
+var num = name.where((element) => element.length == 6);
+print(num);
+
+//degold
