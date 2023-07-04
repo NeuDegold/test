@@ -1,0 +1,60 @@
+///flutter text ///
+ body:Text("My Login Page..",style:TextStyle(
+      fontSize:20,
+      color:const Color.fromARGB(255, 0, 0, 0),
+      letterSpacing:0,
+      wordSpacing:10,
+      decoration: TextDecoration.none,
+      shadows: [
+
+        Shadow(color:Colors.yellow,blurRadius:10.0,offset:Offset(2,4)),
+      ]
+      )));
+
+
+////margin
+
+       margin:EdgeInsets.only(top:100),
+      padding:EdgeInsets.all(40)
+
+       margin:EdgeInsets.symmetric(horizontal:30,vertical:100),
+      padding:EdgeInsets.symmetric(horizontal:10,vertical:10)
+/////flutter border 
+
+ decoration: BoxDecoration(
+    border: Border.all(
+      width: 10,
+    ),
+    borderRadius: BorderRadius.only(topLeft:Radius.circular(30),bottomLeft:Radius.circular(40)),
+    // borderRadius: BorderRadius.all(Radius.circular(30)),
+  ),
+
+//// image form local ///
+
+ body:Container(
+      margin:EdgeInsets.all(50),
+      width:200,
+      height: 200,
+      child:Text("apps..") ,    
+      decoration:BoxDecoration(
+        color:Colors.red,
+        image: DecorationImage(
+          fit:BoxFit.fitHeight,
+             image:AssetImage("images/3.jpg"),
+        )),)
+
+
+//image from newwork //
+image:netWorkimage();
+////////
+
+//////Card /////
+
+body:Card(
+      margin:EdgeInsets.all(100),
+      shadowColor:const Color.fromARGB(255, 32, 32, 32),
+      elevation:3,
+      shape:RoundedRectangleBorder(borderRadius:BorderRadius.circular(39),
+      side:BorderSide(color:Colors.black,width:3)),
+
+////

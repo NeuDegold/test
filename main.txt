@@ -11,7 +11,9 @@ Map myMap ={"name":"ali","age":"33"};
 Set myset ={"name","age","name"};
 
 Map myMap ={"name":"ali","age":"33"};
-
+===============
+set name = new set();
+=================
 Set myset ={"name","age","amer","soso","nour","ali","osama"};
 // myset.addAll({"nour","ali","osama"});
 // myset.remove("nour");
@@ -75,3 +77,123 @@ var num = name.where((element) => element.length == 6);
 print(num);
 
 //degold
+
+
+====================// one myone = new one("spartacus..");
+  ///print(myone.name);
+  //spartacus..
+
+class User {
+  String name;
+  User(this.name);
+}
+
+class one extends User{
+ String name;
+ one(this.name) :super(name);
+
+}
+
+//+=====================
+String name ="osama";
+// User user = new User();
+// print(user.name);
+one myone = new one();
+print(myone.name);
+}
+
+ abstract  class User{
+  String name = "degold";
+  // class abstract bloss fur extends kann nicht in main aklearin
+ }
+ class one extends User{                                                     
+ }
+
+=====================
+
+second mysec = new second();
+mysec.func();
+print(mysec.name);
+
+}
+
+class first{
+  
+   void func(){}
+   String name ="";
+
+ 
+}
+
+class second implements first {
+  String name = "amer";
+void func(){
+  print("message from Second func..");
+}
+
+===============
+
+ status myst = status.online;
+  if(myst == status.online){
+    print("du bist connected");
+  }else{
+    print("kein verblinedung");
+  }
+}
+
+enum status { online, offline }
+
+======================
+String pattern = r'(^(?:[+0]9)?[0-9]{10,12}$)';
+RegExp myreg  = new RegExp(pattern);
+String phone = "07821653089";
+
+print(myreg.hasMatch(phone));
+ 
+}
+//true
+
+
+=============
+//private  (_)
+one myfirst = new one();
+myfirst._func();
+}
+
+class first {
+
+  _func(){
+    print("hello form first");
+  }
+}
+
+
+class one  extends first{
+
+
+}
+=============================
+
+//mixin => wie ein abstract class
+
+first myfirst = new first();
+print(myfirst.name + myfirst.age + myfirst.address);
+
+}
+mixin class one  {
+String name = "degold";
+}
+mixin class two  {
+String age = "25";
+
+}
+
+mixin class three  {
+String address = "alKut-5555";
+
+}
+
+class first with one , two,three{
+  
+ 
+}

@@ -1,3 +1,3 @@
- String myname (int x,String n){
-  return ("add num $x and my name is: $n");
+void main(){
+  print("message fomr second file .dart");
 }
